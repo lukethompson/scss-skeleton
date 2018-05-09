@@ -1,3 +1,54 @@
+////
+/// @group v0.0.1
+////
+
+/// Shorthand mixin for offset positioning
+/// @param {String} $position - Either `relative`, `absolute` or `fixed`
+/// @param {Length} $top [null] - Top offset
+/// @param {Length} $right [null] - Right offset
+/// @param {Length} $bottom [null] - Bottom offset
+/// @param {Length} $left [null] - Left offset
+/// @example scss - Position element `.foo` with the position mixin
+///   .foo {
+///     @include position(fixed, 0, 0, 0, 0)
+///   }
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+	position: $position;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+/// Helper mixin for responding to screen width changes
+/// @param {String} $size - Either `sm`, `md`, `lg` or `xl`
+/// @example scss - Apply respond to mixin to `.foo`
+///   .foo {
+///     color: #fff;
+///     @include respond-to(md) {
+///       color: #000;
+///     }
+///   }
+@mixin respond-to($size) {
+	@if $size == sm {
+		@media only screen and (min-width: $sm-width) { @content; }
+	}
+	@else if $size == md {
+		@media only screen and (min-width: $md-width) { @content; }
+	}
+	@else if $size == lg {
+		@media only screen and (min-width: $lg-width) { @content; }
+	}
+	@else if $size == xl {
+		@media only screen and (min-width: $xl-width) { @content; }
+	}
+}
+
+/// Helper mixin to truncate text
+/// @example scss - Apply text truncate mixin to `.foo`
+///   .foo {
+///     @include text-truncate();
+///   }
 @mixin text-truncate {
 	overflow: hidden;
 	text-overflow: ellipsis;
