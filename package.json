@@ -4,7 +4,7 @@
   "description": "A basic scss boilerplate",
   "main": "main.scss",
   "scripts": {
-    "docs": "sassdoc scss/ --dest ./docs",
+    "docs": "sassdoc scss/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
