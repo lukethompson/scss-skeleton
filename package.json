@@ -1,0 +1,23 @@
+{
+  "name": "scss-skeleton",
+  "version": "0.0.1",
+  "description": "A basic scss boilerplate",
+  "main": "main.scss",
+  "scripts": {
+    "docs": "sassdoc scss/ --dest ./docs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukethompson/scss-skeleton.git"
+  },
+  "keywords": [
+    "scss"
+  ],
+  "author": "Luke Thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukethompson/scss-skeleton/issues"
+  },
+  "homepage": "https://github.com/lukethompson/scss-skeleton#readme"
+}

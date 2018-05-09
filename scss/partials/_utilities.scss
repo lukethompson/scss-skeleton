@@ -1,49 +1,59 @@
-/* Display */
-.d-block {
+////
+/// @group v0.0.1
+////
+
+/// Utility class for `display: block`
+.display-block {
 	display: block;
 }
-.d-flex {
+/// Utility class for `display: flex`
+.display-flex {
 	display: flex;
 }
-.d-inline {
+/// Utility class for `display: inline`
+.display-inline {
 	display: inline;
 }
-.d-inline-block {
+/// Utility class for `display: inline-block`
+.display-inline-block {
 	display: inline-block;
 }
-.d-inline-flex {
+/// Utility class for `display: inline-flex`
+.display-inline-flex {
 	display: inline-flex;
 }
-.d-none {
+/// Utility class for `display: none`
+.display-none {
 	display: none;
 }
 
-/* Image Misc */
+/// Utility class for responsive images
 .img-fluid {
 	max-width: 100%;
 	height: auto;
 }
 
-/* Text Align */
+/// Utility class for `text-align: center`
 .text-center {
 	text-align: center;
 }
+/// Utility class for `text-align: left`
 .text-left {
 	text-align: left;
 }
+/// Utility class for `text-align: right`
 .text-right {
 	text-align: right;
 }
-
-/* Text Misc */
+/// Utility class for `@include text-truncate`
 .text-truncate {
 	@include text-truncate;
 }
-
-/* Text Transform */
+/// Utility class for `text-transform: lowercase`
 .text-lowercase {
   text-transform: lowercase;
 }
+/// Utility class for `text-transform: uppercase`
 .text-uppercase {
   text-transform: uppercase;
 }
