@@ -18,7 +18,13 @@
 	display: none;
 }
 
-/* Text */
+/* Image Misc */
+.img-fluid {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Text Align */
 .text-center {
 	text-align: center;
 }
@@ -27,4 +33,17 @@
 }
 .text-right {
 	text-align: right;
+}
+
+/* Text Misc */
+.text-truncate {
+	@include text-truncate;
+}
+
+/* Text Transform */
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
 }
