@@ -1,2 +1,2 @@
 # scss-skeleton
-Basic scss structure
+SCSS boilerplate
